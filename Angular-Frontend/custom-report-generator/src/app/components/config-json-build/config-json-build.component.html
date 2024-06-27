@@ -1,0 +1,87 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Output File JSON Configuration Builder</h5>
+    <div class="row">
+      <div class="col-4">
+        <div class="btn-group-vertical m-1 w-100">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Extension
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="addExtension('csv')">csv</a></li>
+            <li><a class="dropdown-item" (click)="addExtension('xlsx')">xlsx</a></li>
+            <li><a class="dropdown-item" (click)="addExtension('reset')">reset</a></li>
+            <!-- Add more list items as needed -->
+          </ul>
+        </div>
+        <div class="btn-group-vertical m-1 w-100">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Headers
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="addHeaders('example')">example</a></li>
+            <li><a class="dropdown-item" (click)="addHeaders('empty')">empty</a></li>
+            <li><a class="dropdown-item" (click)="addHeaders('reset')">reset</a></li>
+            <!-- Add more list items as needed -->
+          </ul>
+        </div>
+        <div class="btn-group-vertical m-1 w-100">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Transforms
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="addTransform('rename')">rename</a></li>
+            <li><a class="dropdown-item" (click)="addTransform('transform')">transform</a></li>
+            <li><a class="dropdown-item" (click)="addTransform('both')">both</a></li>
+            <li><a class="dropdown-item" (click)="addTransform('example')">example</a></li>
+            <li><a class="dropdown-item" (click)="addTransform('reset')">reset</a></li>
+            <!-- Add more list items as needed -->
+          </ul>
+        </div>
+        <div class="card m-1 w-100">
+          <div class="card-body">
+
+            <div class="col">
+              <div class="row text-secondary mx-1 mb-1">
+                Append Transform: Obj Index:
+              </div>
+              <div class="row mx-1 mb-1">
+                <input type="number" class="form-control" [(ngModel)]="objIndex">
+                <div *ngIf="objIndex <0" class="text-danger"><small>negative index not allowed</small></div>
+                <div *ngIf="!indexExist" class="text-danger"><small>index not exist</small></div>
+              </div>
+            </div>
+
+            <div class="text-secondary">
+              Choose Transform:
+            </div>
+
+            <div class="btn-group-vertical mt-1 w-100">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Append
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click)="appendTransform('removeAll')">removeAll</a></li>
+                <li><a class="dropdown-item" (click)="appendTransform('removeTransform')">removeTransform</a></li>
+                <li><a class="dropdown-item" (click)="appendTransform('ConvertToRupee')">ConvertToRupee</a></li>
+                <li><a class="dropdown-item" (click)="appendTransform('AddPrefix:value')">AddPrefix</a></li>
+                <li><a class="dropdown-item" (click)="appendTransform('AddLeadingZeros:final_len')">AddLeadingZeros</a></li>
+                <li><a class="dropdown-item" (click)="appendTransform('RemoveFromStart:value')">RemoveFromStart</a></li>
+                <li><a class="dropdown-item" (click)="appendTransform('LimitLengthFromBack:value')">LimitLengthFromBack</a></li>
+
+                <!-- Add more list items as needed -->
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <textarea [(ngModel)]="jsonConfig" class="form-control" rows="10"></textarea>
+      </div>
+    </div>
+    <div *ngIf="!configUploaded" class="text-danger"><small>{{uploadStatus}}</small></div>
+    <div *ngIf="configUploaded" class="text-success"><small>{{uploadStatus}}</small></div>
+    <button class="btn btn-danger mt-3" (click)="uploadConfig()">Upload Final Config</button>
+  </div>
+</div>

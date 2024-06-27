@@ -1,0 +1,12 @@
+.icon-link {
+  color: white;
+  margin-left: 10px;
+}
+
+.icon-link i {
+  font-size: 1.5rem;
+}
+
+.fa-linkedin,.fa-github {
+  color: white;
+}

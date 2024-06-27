@@ -1,0 +1,12 @@
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title">Output File</h5>
+    <div *ngIf="loading && inputUploadStatus" class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    <div *ngIf="!loading && inputUploadStatus">
+      <button class="btn btn-success" (click)="downloadFile()">Download Output File</button>
+      <button class="btn btn-primary" (click)="openInNewTab()">Open in New Tab</button>
+    </div>
+  </div>
+</div>

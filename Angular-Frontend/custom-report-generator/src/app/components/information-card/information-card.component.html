@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">About & Configuration Info</h5>
+    <div class="container mt-3">
+      <div class="list-group" id="infoList">
+        <div *ngFor="let item of items; let i = index">
+          <a
+            class="list-group-item list-group-item-action"
+            (click)="toggleCollapse(i)"
+            [attr.aria-expanded]="activeItem === i ? 'true' : 'false'"
+          >
+            {{ item.title }}
+          </a>
+          <div
+            [id]="'item' + i"
+            class="collapse"
+            [ngClass]="{'show': activeItem === i}"
+          >
+            <div class="card card-body">
+              <div *ngIf="item.imagePath">
+                <img [src]="item.imagePath" alt="{{ item.title }} image" class="img-fluid" />
+              </div>
+              {{ item.description }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

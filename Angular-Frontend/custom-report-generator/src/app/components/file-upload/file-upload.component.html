@@ -1,0 +1,12 @@
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title">Upload File</h5>
+    <input type="file" (change)="onFileSelected($event)" class="form-control mb-3">
+    <div *ngIf="extensionMismatch" class="text-danger"><small>selected file extension mismatches</small></div>
+    <button class="btn"
+            [ngClass]="{ 'btn-danger': configUploadStatus, 'btn-secondary': !configUploadStatus }"
+            [disabled]="!configUploadStatus"
+            (click)="onUpload()"
+            >Upload</button>
+  </div>
+</div>
