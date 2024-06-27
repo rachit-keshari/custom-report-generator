@@ -1,0 +1,27 @@
+{
+  "input_file_extension": "csv",
+  "output_file_headers": [
+    "Amount","UTR","CustomerName","PhoneNo"
+  ],
+  "output_file_config": [
+    {
+      "name": "amount",
+      "rename_to": "Amount",
+      "transform": "ConvertToRupee"
+    },
+    {
+      "name": "utr",
+      "rename_to": "UTR",
+      "transform": "RemoveFromStart:XDS35|AddLeadingZeros:18"
+    },
+    {
+      "name": "ph.no",
+      "rename_to": "PhoneNo",
+      "transform": "LimitLengthFromBack:10|AddPrefix:+91 "
+    },
+    {
+      "name": "name",
+      "rename_to": "CustomerName"
+    }
+  ]
+}

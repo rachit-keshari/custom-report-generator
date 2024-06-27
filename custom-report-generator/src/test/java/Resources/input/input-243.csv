@@ -1,0 +1,6 @@
+id_val,name,age,email,amount,utr,ph.no
+156,John Doe,30,john.doe@example.com,10000,XDS35UTR1234567890,01234567890
+245,Jane Smith,25,jane.smith@example.com,15000,XDS35UTR0987654321,917987654321
+333,Bob Johnson,40,bob.johnson@example.com,200000,XDS35UTR1122334455,+911122334455
+445,Alice Brown,28,alice.brown@example.com,180000,XDS35UTR6677889900,+91-6677889900
+531,Charlie White,35,charlie.white@example.com,220000,XDS35UTR1234509876,01234509876
