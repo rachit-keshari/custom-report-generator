@@ -1,13 +1,5 @@
 # Data Transformation and Report Generation Project
 
-This project provides a comprehensive solution for transforming and generating customized reports from CSV or XLSX files. It uses Angular for the frontend interface, allowing users to upload configuration and input files, and to download the generated report. The backend leverages AWS services, including API Gateway, Lambda, and S3, to handle file uploads, process transformations based on the provided configuration, and store the processed reports. The system is designed to be efficient and scalable, making it suitable for handling large datasets and complex transformation rules.
-
-This project offers an all-encompassing solution for the transformation and generation of tailored reports from CSV or XLSX files. Utilizing Angular on the frontend, it provides an intuitive interface for uploading configuration and input files and facilitates the download of the final report. On the backend, AWS services such as API Gateway, Lambda, and S3 are employed to manage file uploads, execute transformations as per the given configuration, and store the resultant reports. The project is built to be both efficient and scalable, making it ideal for managing extensive datasets and intricate transformation specifications.
-
-Designed to streamline the process of data transformation and report generation, this project caters to handling CSV or XLSX files efficiently. The Angular-based frontend allows users to upload necessary configuration and input files and seamlessly download the customized reports. The backend infrastructure leverages AWS components like API Gateway, Lambda, and S3 to manage the complete workflow—from file upload and transformation, as dictated by the configuration, to storing the processed reports. This solution emphasizes efficiency and scalability, suitable for large-scale datasets and complex data transformation requirements.
-
-# Data Transformation and Report Generation Project
-
 This project provides a seamless way to transform and generate customized reports from input CSV or XLSX files. It leverages AWS services for backend processing and Angular for the frontend interface. The project is designed to be highly modular and efficient, ensuring that large datasets can be processed and transformed with ease.
 
 ## Overview
@@ -140,6 +132,7 @@ This project provides a seamless way to transform and generate customized report
     }
   ]
 }
+```
 
 ## Video Demonstration
 
