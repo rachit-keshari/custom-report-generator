@@ -6,8 +6,6 @@ This project provides a seamless way to transform and generate customized report
 
 Link: [youtube](https://www.youtube.com/watch?v=DiSz4j0-7H0)
 
-Link: [custom-report-generator]()
-
 ## Overview
 ### HLD:
 ![HLD](images/HLD.JPG)
