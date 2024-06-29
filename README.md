@@ -1,6 +1,6 @@
 # Data Transformation and Report Generation Project
 
-This project provides a seamless way to transform and generate customized reports from input CSV or XLSX files. It leverages AWS services for backend processing and Angular for the frontend interface. The project is designed to be highly modular and efficient, ensuring that large datasets can be processed and transformed with ease.
+This project provides a seamless way to transform and generate customized reports from input CSV or XLSX files. It leverages AWS services (Serverless Architechture) using AWS Lambda function. This is a prototype project which has Core Java code deployed over both the Lambda function, that uses inputStream event, input context in lambda handleRequest method to fetch meta data for files to read and process those files.
 
 [![custom-report-generator](https://img.youtube.com/vi/DiSz4j0-7H0/maxresdefault.jpg)](https://www.youtube.com/watch?v=DiSz4j0-7H0)
 
