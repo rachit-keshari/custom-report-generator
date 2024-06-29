@@ -9,8 +9,10 @@ Link: [youtube](https://www.youtube.com/watch?v=DiSz4j0-7H0)
 Link: [custom-report-generator]()
 
 ## Overview
-
-### Frontend
+### HLD:
+![HLD](images/HLD.JPG)
+### Frontend:
+![frontend](images/ss1.JPG)
 
 - **Framework**: Angular
 - **Purpose**: Provides a user-friendly interface to upload configuration and input files, and to download the generated report.
