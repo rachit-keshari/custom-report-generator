@@ -142,13 +142,6 @@ Link: [youtube](https://www.youtube.com/watch?v=DiSz4j0-7H0)
 
 ## Video Demonstration
 
-Watch the video demonstration of the project on [YouTube](https://www.youtube.com/watch?v=example) to see the application in action.
+Watch the video demonstration of the project on [YouTube](https://www.youtube.com/watch?v=DiSz4j0-7H0) to see the application in action.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Contributions are welcome! Please read the [CONTRIBUTING](CONTRIBUTING.md) file for guidelines.
 
